@@ -22,7 +22,7 @@ import com.service.user.transfer.Userdata;
  *
  */
 @RestController
-@RequestMapping("/service")
+@RequestMapping("/user")
 public class UserController {
 
 	@Autowired
