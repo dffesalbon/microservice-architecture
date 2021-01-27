@@ -25,3 +25,7 @@ zuul:
       path: /user/**
       service-id: user-service
       strip-prefix: true
+    config-service:
+      path: /config/**
+      service-id: config-service
+      strip-prefix: true

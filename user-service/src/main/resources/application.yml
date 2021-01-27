@@ -1,5 +1,8 @@
 server:
   port: 8002
+   
+test:
+  name: ${test}  
   
 spring:
   application:
@@ -14,7 +17,11 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: none 
-  
+  cloud:
+    config:
+      uri:
+      - http://localhost:8005
+      
 eureka:
   client:
     register-with-eureka: true
@@ -23,3 +30,5 @@ eureka:
       defaultZone: http://localhost:8001/eureka
   instance:
     hostname: localhost
+ 
+    
