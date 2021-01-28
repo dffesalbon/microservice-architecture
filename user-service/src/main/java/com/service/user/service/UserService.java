@@ -5,7 +5,7 @@ package com.service.user.service;
 
 import java.util.List;
 
-import com.service.user.transfer.Userdata;
+import com.service.user.dto.Userdata;
 
 /**
  * @author danielf

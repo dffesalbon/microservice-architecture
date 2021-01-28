@@ -1,4 +1,4 @@
-package com.service.user;
+package com.service.group;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -12,11 +12,10 @@ import org.springframework.kafka.annotation.EnableKafka;
 @Configuration
 @EnableAutoConfiguration
 @EnableKafka
-public class UserServiceApplication {
-
+public class GroupServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserServiceApplication.class, args);
+		SpringApplication.run(GroupServiceApplication.class, args);
 	}
 
 }

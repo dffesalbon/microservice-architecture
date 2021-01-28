@@ -1,13 +1,7 @@
-/**
- * 
- */
-package com.service.resource.transfer;
+package com.service.user.dto;
 
-/**
- * @author danielf
- *
- */
 public class Userdata {
+
 	private String username;
 	private String password;
 	private String email;
@@ -42,4 +36,5 @@ public class Userdata {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 }

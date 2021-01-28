@@ -1,10 +1,10 @@
-package com.service.resource;
+package com.service.group;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ResourceServiceApplicationTests {
+class GroupServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

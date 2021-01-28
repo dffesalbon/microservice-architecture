@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.service.user.dto.Userdata;
 import com.service.user.service.UserService;
-import com.service.user.transfer.Userdata;
 
 /**
  * @author danielf

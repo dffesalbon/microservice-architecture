@@ -11,11 +11,13 @@ import javax.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
+import com.service.user.commons.ClientService;
+import com.service.user.dto.Userdata;
 import com.service.user.entity.Useraccount;
 import com.service.user.repository.UserRepository;
-import com.service.user.transfer.Userdata;
 
 /**
  * @author danielf
@@ -26,6 +28,9 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UserRepository userRepository;
+
+	@Autowired
+	private KafkaTemplate<String, String> kafkaTemplate;
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
 
@@ -71,7 +76,8 @@ public class UserServiceImpl implements UserService {
 
 		try {
 			LOGGER.info("getting all user");
-
+			LOGGER.info(ClientService.getRequest("http://localhost:8002", "/group-service/group/all"));
+			kafkaTemplate.send("topic", "key", "string data");
 			for (Useraccount u : userRepository.findAll()) {
 				list.add(new Userdata(u.getUsername(), u.getPassword(), u.getEmail()));
 			}
