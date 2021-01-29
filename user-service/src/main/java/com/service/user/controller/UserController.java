@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.service.user.dto.Userdata;
+import com.service.user.entity.Message;
 import com.service.user.service.UserService;
 
 /**
@@ -41,6 +42,11 @@ public class UserController {
 	@GetMapping("/all")
 	public List<Userdata> getAll() {
 		return userService.getAll();
+	}
+	
+	@PostMapping("/message/send")
+	public void sendMessage(@RequestBody Message message) {
+		userService.sendMessage(message);
 	}
 
 }

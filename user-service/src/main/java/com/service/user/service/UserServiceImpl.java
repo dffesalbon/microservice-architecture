@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import com.service.user.commons.ClientService;
 import com.service.user.dto.Userdata;
+import com.service.user.entity.Message;
 import com.service.user.entity.Useraccount;
 import com.service.user.repository.UserRepository;
 
@@ -48,7 +49,7 @@ public class UserServiceImpl implements UserService {
 			return user;
 
 		} catch (Exception e) {
-			LOGGER.warn("Problem saving user " + user.toString() + ". Message" + e);
+			LOGGER.warn("Problem saving user " + user.toString() + ". Message " + e);
 			// TODO: handle exception
 		}
 		return null;
@@ -63,7 +64,7 @@ public class UserServiceImpl implements UserService {
 			return new Userdata(u.getUsername(), u.getPassword(), u.getEmail());
 
 		} catch (Exception e) {
-			LOGGER.warn("Problem getting user: " + username + "'s details. Message" + e);
+			LOGGER.warn("Problem getting user: " + username + "'s details. Message " + e);
 			// TODO: handle exception
 		}
 		return null;
@@ -84,10 +85,21 @@ public class UserServiceImpl implements UserService {
 			return list;
 
 		} catch (Exception e) {
-			LOGGER.warn("Problem get user list. Message" + e);
+			LOGGER.warn("Problem get user list. Message " + e);
 			// TODO: handle exception
 		}
 		return null;
+	}
+
+	@Override
+	public void sendMessage(Message message) {
+		// TODO Auto-generated method stub
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
 	}
 
 }
