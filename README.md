@@ -66,3 +66,5 @@ You should see something like the picture above
 
 ![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/cloud-config.jpeg?raw=true)
 
+After all that, you may test it on POSTMAN. Thanks.
+
