@@ -57,7 +57,7 @@ git commit -m "sample commit"
 
 You should see something like the picture above
 
- After all steps are followed, visiting http:localhost:8001 should be something like this:
+ After all steps are followed, visiting http://localhost:8001 should be something like this:
  
  ![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/up-all.PNG?raw=true)
 
