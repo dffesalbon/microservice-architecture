@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: user-service
+server:
+  port: 8009
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka
+management:
+  security:
+    enabled: false
+  endpoint:
+    info:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"

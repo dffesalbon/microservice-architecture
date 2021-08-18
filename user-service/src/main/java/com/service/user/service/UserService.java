@@ -5,8 +5,8 @@ package com.service.user.service;
 
 import java.util.List;
 
-import com.service.user.dto.Userdata;
 import com.service.user.entity.Message;
+import com.service.user.entity.Useraccount;
 
 /**
  * @author danielf
@@ -14,11 +14,11 @@ import com.service.user.entity.Message;
  */
 public interface UserService {
 
-	Userdata saveOrUpdate(Userdata user);
+	Useraccount saveOrUpdate(Useraccount user);
 
-	Userdata getById(String username);
+	Useraccount getById(String username);
 
-	List<Userdata> getAll();
+	List<Useraccount> getAll();
 
 	void sendMessage(Message message);
 

@@ -3,26 +3,27 @@
  */
 package com.service.user.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 /**
  * @author danielf
  *
  */
-@Entity
-@Table(name = "USERACCOUNT")
 public class Useraccount {
 
-	@Id
-	@Column(name = "username")
 	private String username;
-	@Column(name = "password")
 	private String password;
-	@Column(name = "email")
 	private String email;
+
+	public Useraccount(String username, String password, String email) {
+		// TODO Auto-generated constructor stub
+
+		this.username = username;
+		this.password = password;
+		this.email = email;
+	}
+
+	public Useraccount() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getUsername() {
 		return username;

@@ -9,8 +9,6 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.service.user.service.UserServiceImpl;
-
 /**
  * @author danielf
  *
@@ -20,7 +18,8 @@ public class ClientService {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ClientService.class);
 
-	//** baseUrl will be configured based on default gateway - Need changes and improvement
+	// ** baseUrl will be configured based on default gateway - Need changes and
+	// improvement
 	public static String getRequest(String baseUrl, String baseUri) {
 		try {
 
