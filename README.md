@@ -4,9 +4,9 @@ Architecture Diagram
 
 ### Follow these instructions to get each applications/services running:
    **INITIAL SET UP..**
- -Go to/open the **config-profiles** folder. 
- -Open terminal or bash.
- -Initialize git by running these commands 
+ - Go to/open the **config-profiles** folder. 
+ - Open terminal or bash.
+ - Initialize git by running these commands 
  > git init
  > git add .
  > git commit -m "sample commit"
