@@ -54,4 +54,5 @@ git commit -m "sample commit"
 
 You should see something like the picture above
 
-Properties (ports, routes) of each application could be found and modified on the centralized cloud configuration repository (**config-profiles** folder)
+### Note:
+> Properties (ports, routes) of each application could be found and modified on the centralized cloud configuration repository (**config-profiles** folder)
