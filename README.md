@@ -1,9 +1,8 @@
 ## Microservice Architecture using Spring Boot
 
- ![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/architecture.jpeg?raw=true)
-
 ### Architecture Diagram
 
+ ![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/architecture.jpeg?raw=true)
 
 ### Follow these instructions to get each applications/services running:
    **INITIAL SET UP..**
@@ -56,9 +55,14 @@ git commit -m "sample commit"
 
 You should see something like the picture above
 
+ After all steps are followed, visiting http:localhost:8001 should be something like this:
+ 
+ ![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/up-all.PNG?raw=true)
+
 ### Note:
 > Properties (ports, routes) of each application could be found and modified on the centralized cloud configuration repository (**config-profiles** folder)
 
+### Configuration Profiles Diagram
+
 ![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/cloud-config.jpeg?raw=true)
 
-### Configuration Profiles Diagram
