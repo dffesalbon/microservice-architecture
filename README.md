@@ -11,6 +11,8 @@ Architecture Diagram
  > git add .
  > git commit -m "sample commit"
 
+  ![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/profilesgit.PNG?raw=true)
+
    **STARTING SERVICE REGISTRY..**
  - Go to/open the **config service** folder. Either in Eclipse or a terminal.
  - Start the application. (Eclipse) -> Run as Spring boot (I have this for mine)
