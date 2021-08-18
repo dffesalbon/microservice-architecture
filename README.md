@@ -20,6 +20,8 @@ git commit -m "sample commit"
 
    **STARTING SERVICE REGISTRY..**
  - Go to/open the **config service** folder. Either in Eclipse or a terminal.
+ - Please make sure that the config.server.git.uri is **config-profiles** folder directory
+  ![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/profilesdir.PNG?raw=true)
  - Start the application. (Eclipse) -> Run as Spring boot (I have this for mine)
  - Start the application. (Maven) -> Please see maven documentations.
  - Go to/open the **eureka registry** folder. Either in Eclipse or a terminal.
@@ -56,3 +58,7 @@ You should see something like the picture above
 
 ### Note:
 > Properties (ports, routes) of each application could be found and modified on the centralized cloud configuration repository (**config-profiles** folder)
+
+![alt text](https://github.com/danielfesalbon/microservice-architecture/blob/main/img/cloud-config.jpeg?raw=true)
+
+### Configuration Profiles Diagram
